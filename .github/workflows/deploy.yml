@@ -37,4 +37,3 @@ jobs:
           branch: gh-pages
           folder: out
           repository-name: Johannsis/portfolio
-          token: ${{ secrets.ACCESS_TOKEN }}
