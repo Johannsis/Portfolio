@@ -37,3 +37,4 @@ jobs:
           branch: gh-pages
           folder: out
           repository-name: portfolio
+          token: ${{ secrets.ACCESS_TOKEN }}
