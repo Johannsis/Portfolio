@@ -6,8 +6,7 @@
     "(use client|use server|server-only)",
     "^(react/(.*)$)|^(react$)",
     "<THIRD_PARTY_MODULES>",
-    "@mui*",
-    "^@bw/*/(.*)$",
+    "^@jh/*/(.*)$",
     "^([../]|[./]|[.])"
   ],
   "importOrderSeparation": true,
