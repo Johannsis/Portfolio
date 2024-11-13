@@ -5,12 +5,7 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    // "@arthurgeron/eslint-plugin-react-usememo",
-    "perfectionist",
-    "prettier",
-    "eslint-plugin-react-compiler"
-  ],
+  "plugins": ["perfectionist", "prettier", "react-compiler"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -67,7 +62,6 @@
     ],
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/consistent-type-imports": "error",
-    // "@arthurgeron/react-usememo/require-usememo": "error",
     "newline-before-return": "error"
   }
 }

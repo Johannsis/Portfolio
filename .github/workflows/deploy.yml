@@ -25,12 +25,12 @@ jobs:
         with:
           node-version: '20'
       - name: Install Dependencies and Build
-        run: | 
+        run: |
           npm install
           npm run build
       - name: Upload to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-            ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-            BRANCH: gh-pages
-            FOLDER: portfolio
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: portfolio
