@@ -1,0 +1,36 @@
+name: Build and Deploy to Github Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    name: Deploy to Github Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+          with:
+            fetch-depth: 5
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Dependencies and Build
+        run: | 
+          npm install
+          npm run build
+      - name: Upload to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+            ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+            BRANCH: gh-pages
+            FOLDER: portfolio
