@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Head from 'next/head';
 
 import { ThemeProvider } from '@jh/library/themeProvider';
 import { montserrat } from '@jh/styles/fonts/montserrat';
@@ -21,6 +22,9 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
     >
+      <Head>
+        <link href="./output.css" rel="stylesheet"></link>
+      </Head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
