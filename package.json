@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && npm run build:tailwind",
-    "build:tailwind": "npx tailwindcss -i ./src/styles/global.css -o ./out/output.css",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
