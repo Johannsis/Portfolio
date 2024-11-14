@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { ThemeProvider } from '@jh/library/themeProvider';
 import { montserrat } from '@jh/styles/fonts/montserrat';
 
+import '../build.css';
 import '../styles/global.css';
 
 export const metadata: Metadata = {
