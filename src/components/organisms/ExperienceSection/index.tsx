@@ -17,7 +17,7 @@ function ExperienceWidget(): React.ReactElement {
       </div>
       <a
         className="body-md mt-4 flex flex-row items-center gap-2 fill-current font-bold duration-200 ease-in-out hover:text-lime-700 dark:font-semibold dark:hover:text-lime-500 lg:p-4"
-        href="Johannes-Hoersch-CV.pdf"
+        href="/assets/Johannes-Hoersch-CV.pdf"
         target="_blank"
       >
         <span className="body-md font-semibold dark:font-medium">
