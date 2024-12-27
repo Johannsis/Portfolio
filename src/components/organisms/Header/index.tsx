@@ -1,3 +1,5 @@
+import 'server-only';
+
 import ContactLinks from '@jh/components/molecules/ContactLinks';
 import HeaderSections from '@jh/components/molecules/HeaderSections';
 import { userData } from '@jh/data/user';

@@ -1,3 +1,5 @@
+import 'server-only';
+
 import Section from '@jh/components/atoms/Section';
 import SectionTitle from '@jh/components/atoms/SectionTitle';
 import AboutReadMore from '@jh/components/molecules/AboutReadMore';

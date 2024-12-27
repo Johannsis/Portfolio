@@ -1,3 +1,5 @@
+import 'server-only';
+
 import TechTag from '../TechTag';
 
 interface ExperienceCardProps {

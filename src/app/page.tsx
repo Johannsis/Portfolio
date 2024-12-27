@@ -1,3 +1,5 @@
+import 'server-only';
+
 import MouseLight from '@jh/components/atoms/MouseLight';
 import ThemeButtonPlaceholder from '@jh/components/molecules/ThemeButton/ThemeButtonPlaceHolder';
 import AboutWidget from '@jh/components/organisms/AboutWidget';

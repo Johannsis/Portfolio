@@ -1,3 +1,5 @@
+import 'server-only';
+
 import { userData } from '@jh/data/user';
 import { Icon } from '@jh/icons';
 

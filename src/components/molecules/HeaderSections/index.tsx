@@ -1,3 +1,5 @@
+import 'server-only';
+
 import HeaderNavItem from '../HeaderNavItem';
 
 const sections = ['about', 'experience'];

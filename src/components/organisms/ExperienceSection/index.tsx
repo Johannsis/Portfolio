@@ -1,11 +1,15 @@
+import 'server-only';
+
 import Section from '@jh/components/atoms/Section';
 import SectionTitle from '@jh/components/atoms/SectionTitle';
 import ExperienceCard from '@jh/components/molecules/ExperienceCard';
 import { userData } from '@jh/data/user';
+import { isProd } from '@jh/flags/environment';
 import { Icon } from '@jh/icons';
 
 function ExperienceWidget(): React.ReactElement {
   const data = userData.experience;
+  const isProduction = isProd();
 
   return (
     <Section ariaLabel="Work experience" id="experience">
@@ -17,7 +21,11 @@ function ExperienceWidget(): React.ReactElement {
       </div>
       <a
         className="body-md mt-4 flex flex-row items-center gap-2 fill-current font-bold duration-200 ease-in-out hover:text-lime-700 dark:font-semibold dark:hover:text-lime-500 lg:p-4"
-        href="/assets/Johannes-Hoersch-CV.pdf"
+        href={
+          isProduction
+            ? '/portfolio/assets/Johannes-Hoersch-CV.pdf'
+            : '/assets/Johannes-Hoersch-CV.pdf'
+        }
         target="_blank"
       >
         <span className="body-md font-semibold dark:font-medium">

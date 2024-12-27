@@ -1,3 +1,5 @@
+import 'server-only';
+
 import type { LegacyRef } from 'react';
 
 import clsx from 'clsx';
