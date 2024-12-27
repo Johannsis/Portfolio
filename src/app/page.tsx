@@ -12,7 +12,7 @@ export default function Home(): React.ReactElement {
         <main className="mx-auto my-0 flex w-full grow flex-col gap-16 py-0 lg:mr-0 lg:max-w-[calc(60%-0.75rem)]">
           <AboutWidget />
           <ExperienceWidget />
-          <footer className="body-xs flex flex-col gap-2 pb-16 font-semibold text-primary-100 dark:font-normal dark:text-secondary-50 lg:p-4">
+          <footer className="body-xs flex flex-col gap-2 pb-8 font-semibold text-primary-100 dark:font-normal dark:text-secondary-50 lg:p-4">
             <p>
               Designed with 💚 in{' '}
               <span className="font-bold text-primary-50 dark:font-semibold dark:text-secondary-100">
