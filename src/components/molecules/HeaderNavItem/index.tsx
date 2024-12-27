@@ -26,7 +26,7 @@ function HeaderNavItem({
       (entries: IntersectionObserverEntry[]): void => {
         entries.forEach((entry): void => {
           const { bottom } = entry.boundingClientRect;
-          const isInterecting = bottom >= 0 && entry.intersectionRatio >= 0.2;
+          const isInterecting = bottom >= 0 && entry.intersectionRatio >= 0.3;
           if (!isInterecting) {
             setActive(false);
 
