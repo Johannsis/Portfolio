@@ -15,6 +15,7 @@ function ContactLinks(): React.ReactElement {
             className="text-black duration-200 ease-in-out hover:!text-lime-800 dark:text-white dark:hover:!text-lime-500"
             href={url}
             key={index}
+            referrerPolicy="no-referrer"
             target="_blank"
           >
             <Icon className="fill-current" iconName={icon} size={24} />
