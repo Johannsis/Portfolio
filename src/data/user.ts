@@ -5,18 +5,13 @@ interface SocialLinks {
 }
 
 export const userData = {
-  description: `I'm a excited Software Engineer passionate about crafting the most performant, pixel-perfect and accesible interfaces that mixes creative designs 
-  with maintainable engineering. My favorite part of my work is integrating the latest fast technologies with your thoughtful and 
-  desired design to create experiences that'll engage the users not only for looks, but also responsiveness, performance and usability.
-  \n Currently, I'm a Senior Front-End Engineer at TelevisaUnivision, specializing in performance and new features. 
-  I contribute to the creation and integration of UI components that power TelevisaUnivision's sites'frontend, ensuring that the platform meets the highest 
-  standard of quality, performance and best practices to deliver an outstanding user experience.`,
   experience: [
     {
       companyName: 'TelevisaUnivision',
-      description: 'Developed mobile banking apps.',
+      description:
+        'Implemented and optimized various tools and technologies, including Taboola, CivicScience, Google Tag Manager, OneTrust, and Next.js, to maximize ad revenue, enhance performance, ensure privacy compliance, and improve security, while maintaining SEO best practices and monitoring system performance.',
       period: '2022 - present',
-      position: 'React Frontend Developer',
+      position: 'Senior Front-End Developer',
       stack: [
         'Next.js',
         'Relay',
@@ -24,54 +19,66 @@ export const userData = {
         'Zustand',
         'Redis',
         'Tailwind CSS',
+        'React',
+        'TypeScript',
       ],
       url: 'https://corporate.televisaunivision.com/',
     },
     {
       companyName: 'Shutterstock',
       description:
-        "Optimized performance of the Jenkins'pipeline to reduce the duration of the workflow up to 80%.",
+        'Optimized source code for faster end-user experience, streamlined the CI/CD pipeline to reduce workflow time by up to 80%, and maintained source code, analytics, and tests.',
       period: '2022 - 2022',
-      position: 'Fullstack Engineer',
+      position: 'Full-Stack Engineer',
       stack: [
         'Node.js',
         'Next.js',
         'JavaScript',
         'React',
         'Storybook',
-        'HTML',
-        'CSS',
+        'HTML 5',
+        'CSS 3',
         'Cypress',
         'Contentful',
-        'Google Ads',
-        'Emotion',
         'Redux',
         'useContext',
         'Jenkins',
+        'Github Actions',
       ],
       url: 'https://www.shutterstock.com/',
     },
     {
+      companyName: 'BairesDev',
+      description:
+        'Achieved high customer satisfaction through high-quality code and professionalism, provided services to companies like Shutterstock and TelevisaUnivision, and led large-scale projects for major organizations.',
+      period: '2019 - PRESENT',
+      position: 'Software Engineer',
+      stack: ['Jira'],
+      url: 'https://www.bairesdev.com/',
+    },
+    {
       companyName: 'Tevolv',
-      description: 'Developed mobile banking apps.',
+      description:
+        'Developed mobile apps for banks using the MVC pattern, created Java microservices for T24 Transact, and performed comprehensive software maintenance, including updates, patches, and optimizations.',
       period: '2019 - 2022',
       position: 'Software Engineer',
       stack: [
         'Node.js',
         'Java',
         'JavaScript',
-        'Kony',
+        'Kony framework',
         'iOS',
         'Android',
         'Android Studio',
+        'T24 Backend',
       ],
       url: 'https://www.tevolv.com/',
     },
   ],
   job: 'Software Engineer',
-  location: 'Santo Domingo, Dominican Republic',
+  location: 'Santo Domingo, DR',
   motto:
-    'I build fast, reliable and pixel-perfect digital experiences for the web.',
+    'I build fast, maintainable, pretty and reliable digital experiences for the web.',
   name: 'Johannes Hoersch',
   projects: [],
   social: [

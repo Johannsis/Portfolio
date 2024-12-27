@@ -9,8 +9,7 @@ interface HeaderNavItemProps {
 }
 
 const observerOptions: IntersectionObserverInit = {
-  rootMargin: '10px 10px 10px 10px',
-  threshold: [0, 0.25, 0.5, 0.75, 1],
+  threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
 };
 
 function HeaderNavItem({
@@ -27,7 +26,7 @@ function HeaderNavItem({
       (entries: IntersectionObserverEntry[]): void => {
         entries.forEach((entry): void => {
           const { bottom } = entry.boundingClientRect;
-          const isInterecting = bottom >= 0 && entry.intersectionRatio >= 0.6;
+          const isInterecting = bottom >= 0 && entry.intersectionRatio >= 0.2;
           if (!isInterecting) {
             setActive(false);
 
