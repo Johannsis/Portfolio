@@ -57,6 +57,10 @@ export default function RootLayout({
           sizes="16x16"
           type="image/png"
         />
+        <meta
+          content="Software Engineer, Front-End Developer"
+          name="keywords"
+        />
       </head>
       <body className="m-0 antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
