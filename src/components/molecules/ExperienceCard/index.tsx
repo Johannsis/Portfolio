@@ -18,7 +18,7 @@ function ExperienceCard({
   url,
 }: ExperienceCardProps): React.ReactElement {
   return (
-    <div className="dark:lg:hover:glassmorphism-background-dark group flex grow flex-col gap-3 transition-none md:flex-row md:gap-20 lg:p-4 lg:duration-75 lg:ease-in-out lg:hover:glassmorphism-background">
+    <div className="group flex grow flex-col gap-3 transition-none md:flex-row md:gap-20 lg:p-4 lg:duration-75 lg:ease-in-out lg:hover:glassmorphism-background dark:lg:hover:glassmorphism-background-dark">
       <div className="flex max-w-[70px]">
         <span className="body-xs text-nowrap font-extrabold uppercase text-primary-50 dark:font-bold dark:text-secondary-50">
           {period}
