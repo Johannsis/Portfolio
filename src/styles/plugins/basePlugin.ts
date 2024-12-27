@@ -1,100 +1,93 @@
 import plugin from 'tailwindcss/plugin';
 
 export const basePlugins = [
-  plugin(({ addComponents, addUtilities, theme }): void => {
+  plugin(({ addComponents, addUtilities }): void => {
     addComponents({
       '.body-2xs': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': 'var(--font-sizing-2xs)',
+        'font-size': '0.75rem',
         'font-weight': '700',
-        'line-height': 'var(--font-spacing-xs)',
+        'line-height': '1.25rem',
         'text-align': 'left',
       },
       '.body-lg': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': 'var(--font-sizing--lg)',
+        'font-size': 'clamp(1rem,2.5vw,2rem)',
         'font-weight': '500',
-        'line-height': 'var(--font-spacing--md)',
+        'line-height': 'clamp(1rem,2.5vw,2rem)',
         'text-align': 'left',
       },
       '.body-md': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': 'var(--font-sizing--md)',
+        'font-size': '1rem',
         'font-weight': '500',
-        'line-height': 'var(--font-spacing--sm)',
+        'line-height': '1.2',
         'text-align': 'left',
       },
       '.body-sm': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': 'var(--font-sizing--sm)',
+        'font-size': '1rem',
         'font-weight': '400',
-        'line-height': 'var(--font-spacing--sm)',
+        'line-height': '1.5',
         'text-align': 'left',
       },
       '.body-xs': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': 'var(--font-sizing--xs)',
+        'font-size': '0.875rem',
         'font-weight': '700',
-        'line-height': '18.2px',
+        'line-height': '1.5',
         'text-align': 'left',
-      },
-      '.container-wrapper': {
-        'border-radius':
-          'var(--corner-radius-large-radius) var(--zero) var(--zero) var(--corner-radius-large-radius)',
-        filter: 'drop-shadow(0 60px 24px rgba(12,47,70,1))',
       },
       '.titles-2xl': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': 'var(--font-sizing--2xl)',
+        'font-size': 'clamp(1rem,2.5vw,2rem)',
         'font-weight': '300',
-        'line-height': 'var(--font-spacing--xl)',
+        'line-height': 'clamp(1rem,2.5vw,2rem)',
         'text-align': 'left',
       },
       '.titles-3xl': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': 'var(--font-sizing--3xl)',
+        'font-size': 'clamp(1rem,2.5vw,2rem)',
         'font-weight': '300',
-        'line-height': 'var(--font-spacing--2xl)',
+        'line-height': 'clamp(1rem,2.5vw,2rem)',
         'text-align': 'left',
       },
       '.titles-4xl': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': 'var(--font-sizing--4xl)',
+        'font-size': 'clamp(2.25rem,6.5vw,3rem)',
         'font-weight': '300',
-        'line-height': 'var(--font-spacing--3xl)',
+        'line-height': 'clamp(2.5rem,2.5vw,1)',
         'text-align': 'left',
       },
       '.titles-lg': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': ' var(--font-sizing--lg)',
+        'font-size': '0.875rem',
         'font-weight': '400',
-        'line-height': 'var(--font-spacing--sm)',
+        'line-height': '1.25rem',
         'text-align': 'left',
       },
       '.titles-xl': {
         'font-family': 'var(--font-montserrat)',
-        'font-size': ' var(--font-sizing--xl)',
+        'font-size': 'clamp(1.125rem,6.5vw,1.25rem)',
         'font-weight': '400',
-        'line-height': 'var(--font-spacing--md)',
+        'line-height': '1.5',
         'text-align': 'left',
       },
     });
     addUtilities({
-      '.animation-timing': {
-        'transition-duration': '100ms',
-        'transition-timing-function': 'cubic-bezier(0,0,0.2,1)',
+      '.glassmorphism-background': {
+        '-webkit-backdrop-filter': 'blur(3px)',
+        'backdrop-filter': 'blur(3px)',
+        background: 'rgba(0, 0, 0, 0.05)',
+        'border-radius': '16px',
+        'box-shadow': '0 4px 30px rgba(255, 255, 255, 0.1)',
       },
-      '.content-auto': {
-        'content-visibility': 'auto',
-      },
-      '.custom-scrollbar': {
-        '-ms-overflow-style': 'none',
-        'scrollbar-width': 'none',
-      },
-      '.purple-hover': {
-        'border-color': theme('colors.blue-marguerite.100'),
-        'border-style': 'solid',
-        'border-width': '1px',
+      '.glassmorphism-background-dark': {
+        '-webkit-backdrop-filter': 'blur(3px)',
+        'backdrop-filter': 'blur(3px)',
+        background: 'rgba(255, 255, 255, 0.05)',
+        'border-radius': '16px',
+        'box-shadow': '0 4px 30px rgba(0, 0, 0, 0.1)',
       },
     });
   }),

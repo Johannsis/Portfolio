@@ -5,12 +5,16 @@ interface SocialLinks {
 }
 
 export const userData = {
-  description:
-    "I'm a excited Software Engineer based in the Dominican Republic. I'm currently studying to be a fullstack developer and hopefully a software architect in the future. I have strong interests in design, architecture, visually stunning, performant and friendly websites and in every amazing project I was able to improve even further my skills and knowledge to achieve the best results for a succesful website.",
+  description: `I'm a excited Software Engineer passionate about crafting the most performant, pixel-perfect and accesible interfaces that mixes creative designs 
+  with maintainable engineering. My favorite part of my work is integrating the latest fast technologies with your thoughtful and 
+  desired design to create experiences that'll engage the users not only for looks, but also responsiveness, performance and usability.
+  \n Currently, I'm a Senior Front-End Engineer at TelevisaUnivision, specializing in performance and new features. 
+  I contribute to the creation and integration of UI components that power TelevisaUnivision's sites'frontend, ensuring that the platform meets the highest 
+  standard of quality, performance and best practices to deliver an outstanding user experience.`,
   experience: [
     {
+      companyName: 'TelevisaUnivision',
       description: 'Developed mobile banking apps.',
-      name: 'TelevisaUnivision',
       period: '2022 - present',
       position: 'React Frontend Developer',
       stack: [
@@ -24,9 +28,9 @@ export const userData = {
       url: 'https://corporate.televisaunivision.com/',
     },
     {
+      companyName: 'Shutterstock',
       description:
         "Optimized performance of the Jenkins'pipeline to reduce the duration of the workflow up to 80%.",
-      name: 'Shutterstock',
       period: '2022 - 2022',
       position: 'Fullstack Engineer',
       stack: [
@@ -48,8 +52,8 @@ export const userData = {
       url: 'https://www.shutterstock.com/',
     },
     {
+      companyName: 'Tevolv',
       description: 'Developed mobile banking apps.',
-      name: 'Tevolv',
       period: '2019 - 2022',
       position: 'Software Engineer',
       stack: [
@@ -65,10 +69,11 @@ export const userData = {
     },
   ],
   job: 'Software Engineer',
+  location: 'Santo Domingo, Dominican Republic',
+  motto:
+    'I build fast, reliable and pixel-perfect digital experiences for the web.',
   name: 'Johannes Hoersch',
   projects: [],
-  rights: '© 2024 Johannes Hoersch. All Rights Reserved',
-  skills: { back: [], front: [] },
   social: [
     {
       icon: 'mail',

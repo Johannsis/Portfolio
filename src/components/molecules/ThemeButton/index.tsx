@@ -14,16 +14,19 @@ function ThemeButton(): React.ReactElement {
   }, [isDark, setTheme]);
 
   return (
-    <button className="flex items-center" onClick={toggleTheme}>
+    <button
+      className="fixed right-4 top-4 z-20 items-center"
+      onClick={toggleTheme}
+    >
       {isDark ? (
         <Icon
-          className="fill-current text-black dark:text-white"
+          className="fill-current text-primary-100 dark:text-secondary-50"
           iconName="sun"
           size={28}
         />
       ) : (
         <Icon
-          className="fill-current text-black dark:text-white"
+          className="fill-current text-primary-100 dark:text-secondary-50"
           iconName="moon"
           size={28}
         />

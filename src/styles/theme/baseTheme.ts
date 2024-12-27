@@ -1,6 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+import type { CustomThemeConfig } from 'tailwindcss/types/config';
 
-export const baseTheme = {
+export const baseTheme: Partial<CustomThemeConfig> = {
   ...defaultTheme,
   extend: {
     colors: {
@@ -15,6 +16,11 @@ export const baseTheme = {
         '80': '#154f30',
         '90': '#185a37',
         '100': '#1b663e',
+      },
+      secondary: {
+        '40': '#c6e2d8',
+        '50': '#9cc7bf',
+        '100': '#e3fff5',
       },
     },
     fontFamily: {
