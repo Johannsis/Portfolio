@@ -66,4 +66,8 @@ function AboutWidget(): React.ReactElement {
   );
 }
 
-export default memo(AboutWidget);
+function isEqual(): boolean {
+  return true;
+}
+
+export default memo(AboutWidget, isEqual);
