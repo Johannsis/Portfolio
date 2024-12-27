@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 
 import clsx from 'clsx';
 
@@ -62,4 +62,4 @@ function HeaderNavItem({
   );
 }
 
-export default HeaderNavItem;
+export default memo(HeaderNavItem);

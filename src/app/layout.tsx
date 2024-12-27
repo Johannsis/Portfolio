@@ -17,11 +17,11 @@ export default function RootLayout({
 }>): React.ReactElement {
   return (
     <html
-      className={`${montserrat.variable} h-full overflow-x-hidden antialiased`}
+      className={`${montserrat.variable} scroll-smooth`}
       lang="en"
       suppressHydrationWarning
     >
-      <body className="block h-full min-h-screen overflow-auto">
+      <body className="m-0 antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
