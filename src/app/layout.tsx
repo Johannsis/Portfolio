@@ -17,7 +17,7 @@ export default function RootLayout({
 }>): React.ReactElement {
   return (
     <html
-      className={`${montserrat.variable} h-full overflow-hidden antialiased`}
+      className={`${montserrat.variable} h-full overflow-x-hidden antialiased`}
       lang="en"
       suppressHydrationWarning
     >

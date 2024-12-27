@@ -1,21 +1,41 @@
+'use client';
+
+import { useCallback, useState } from 'react';
+
+import clsx from 'clsx';
+
 import Section from '@jh/components/atoms/Section';
 import SectionTitle from '@jh/components/atoms/SectionTitle';
 
 function AboutWidget(): React.ReactElement {
+  const [visible, setVisibility] = useState<boolean>(false);
+  const handleVisibility = useCallback((): void => {
+    setVisibility(!visible);
+  }, [visible]);
+
   return (
     <Section ariaLabel="About me" className="lg:!p-4" id="about">
       <SectionTitle title="about" />
-      <p className="body-md font-semibold leading-6 text-primary-100 dark:font-normal dark:text-secondary-50">
-        I&apos;m a perfectionist Software Engineer passionate about crafting the
-        most performant, pixel-perfect, and accessible interfaces that blend
-        creative designs with maintainable engineering. My favorite part of my
-        work is integrating the latest fast technologies with thoughtful and
-        desired designs to create experiences that engage users not only through
-        looks but also responsiveness, best practices, performance, and
-        usability while maintaining high SEO and Web Core Vitals&apos; metrics.
+      <p className="body-xs font-semibold leading-6 text-primary-100 dark:font-normal dark:text-secondary-50">
+        I&apos;m a detail-oriented Software Engineer passionate about building
+        performant, pixel-perfect, and accessible interfaces that combine
+        creative design with maintainable engineering. I love integrating
+        cutting-edge technologies with thoughtful design to create engaging user
+        experiences focused on responsiveness, performance, usability, and SEO,
+        while optimizing for Web Core Vitals.
       </p>
-      <p className="body-md font-semibold leading-6 text-primary-100 dark:font-normal dark:text-secondary-50">
-        Currently, I’m a Senior Front-End Engineer at
+      <p
+        className={clsx(
+          'body-xs font-semibold leading-6 text-primary-100 dark:font-normal dark:text-secondary-50',
+          !visible && 'hidden',
+        )}
+      >
+        Currently, I’m a{' '}
+        <span className="font-bold text-primary-50 dark:font-semibold dark:text-secondary-100">
+          {' '}
+          Senior Front-End Engineer
+        </span>{' '}
+        at
         <span className="font-bold text-primary-50 dark:font-semibold dark:text-secondary-100">
           {' '}
           TelevisaUnivision
@@ -26,7 +46,12 @@ function AboutWidget(): React.ReactElement {
         quality, performance, and best practices to deliver an outstanding user
         experience.
       </p>
-      <p className="body-md font-semibold leading-6 text-primary-100 dark:font-normal dark:text-secondary-50">
+      <p
+        className={clsx(
+          'body-xs font-semibold leading-6 text-primary-100 dark:font-normal dark:text-secondary-50',
+          !visible && 'hidden',
+        )}
+      >
         In the past, I&apos;ve had the opportunity to develop software across a
         variety of environments, from{' '}
         <span className="font-bold text-primary-50 dark:font-semibold dark:text-secondary-100">
@@ -42,6 +67,13 @@ function AboutWidget(): React.ReactElement {
         </span>
         .
       </p>
+      <button
+        className="body-xs w-fit rounded-xl px-2 py-1 font-extrabold leading-6 text-primary-100 glassmorphism-background hover:text-lime-700 dark:font-bold dark:text-secondary-100 dark:glassmorphism-background-dark dark:hover:text-lime-500"
+        onClick={handleVisibility}
+        type="button"
+      >
+        {visible ? 'Show less' : 'Read more'}
+      </button>
     </Section>
   );
 }
