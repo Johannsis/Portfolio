@@ -1,5 +1,6 @@
 import 'server-only';
 
+import MouseLight from '@jh/components/atoms/MouseLight';
 import ThemeButtonPlaceholder from '@jh/components/molecules/ThemeButton/ThemeButtonPlaceHolder';
 import AboutWidget from '@jh/components/organisms/AboutWidget';
 import ExperienceWidget from '@jh/components/organisms/ExperienceSection';
@@ -28,6 +29,7 @@ export default function Home(): React.ReactElement {
           </footer>
         </main>
       </div>
+      <MouseLight />
       <ThemeButtonPlaceholder />
     </div>
   );
